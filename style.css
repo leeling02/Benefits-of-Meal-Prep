@@ -75,7 +75,7 @@ height: 100%;
     border-top-right-radius: 10px;
 }
 
-.meal a {
+.meal button {
     text-decoration: none;
     color:beige;  
     padding: 10px;
@@ -84,7 +84,7 @@ height: 100%;
     margin-left: 75px;
 
 }
-.meal-result a:hover {
+.meal-result button:hover {
     background-color: #f6541e;
 }
 
@@ -94,21 +94,7 @@ height: 100%;
     text-align: center;
 }
 
-.meal-details {
-    background-color: #EFECEC;
-    width: 700px; 
-    /* position: fixed; 
-    top: 50%; 
-    left: 50%;  */
-    /* transform: translate(-50%, -50%);  */
-    
-
-    
-}
-.meal-details-content {
-    margin: 30px 30px; 
-}
-.meal-details button {
-    float: right; 
-    margin: 3px 5px; 
+.meal .recipe-instruct {
+    color: aqua; 
+    visibility: hidden;
 }
