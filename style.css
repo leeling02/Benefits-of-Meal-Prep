@@ -1,17 +1,39 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    background-color: white;
 }
 
 .navbar {
     width: 100%; 
     height:10vh; 
-    margin: 0 0; 
+    background-color: #0C2D57;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+    align-items: center;
+    
+}
+
+
+#navElemt {
+    color:white; 
+    padding-right: 50px; 
     background-color: #0C2D57;
 }
+
 
 .header-img {
 width: 100%; 
 height: 100%; 
+}
+
+.text {
+    margin: 0 20px; 
+}
+
+.container {
+    margin-bottom: 80px;
 }
 
 
@@ -65,6 +87,7 @@ height: 100%;
         white-space: nowrap; /* Prevent the text from wrapping to the next line */
         text-overflow: ellipsis; /* Show an ellipsis (...) when the text overflows */
         max-width: 100%; /* Ensure the text doesn't exceed the width of the div */
+        background-color: #FFB0B0;
       
 }
 
@@ -98,3 +121,104 @@ height: 100%;
     color: aqua; 
     visibility: hidden;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    height: 2.5rem; 
+    background-color: #f0f0f0;
+    text-align: center;
+    color: black; 
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    background-color: #f0f0f0;  
+}
+
+.footer li {
+    margin: 0 50px; 
+   background-color: #f0f0f0;
+   color: black;
+}
+
+span {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.conclusion {
+padding: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.conclusion-heading {
+    text-align: center;
+}
+.conclusion li {
+    font-weight: bold;
+    list-style:decimal
+}
+
+
+[class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    * {
+        background-color: #E2BFB3; 
+    }
+    .navbar {
+        background-color: #FEECE2;
+    }
+    #navElemt {
+        background-color: #FEECE2;
+        color: black;
+    }
+    .meal {
+        background-color: #FFBE98;
+    }
+    i {
+        background-color: #ddd;
+    }
+    ::placeholder {
+        color: #35374B;
+    }
+    .meal h3 {
+        background-color: #FFBE98;
+    }
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }

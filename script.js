@@ -56,6 +56,7 @@ searchBtn.addEventListener("click", function () {
             mealList.appendChild(mealElement);
           });
         } else {
+          mealList.innerHTML = ""
           const noResultElement = document.createElement("p");
           noResultElement.textContent = "No meals found";
           mealList.appendChild(noResultElement);
